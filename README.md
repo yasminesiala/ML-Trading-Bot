@@ -14,19 +14,6 @@ The ML Trading Bot is designed to:
 The default configuration trades SPY and analyzes the previous three days of news data before each trading iteration.
 
 
-## Project Structure
-
-```
-ML-Trading-Bot/
-│
-├── finbert_utils.py          # FinBERT sentiment analysis helper functions
-├── tradingbot.py             # Main trading strategy and backtesting script
-├── logs/                     # Logs generated while running the bot
-└── README.md
-```
-
----
-
 ## How the Strategy Works
 
 ### 1. Position Sizing
@@ -110,16 +97,6 @@ Or install manually:
 pip install lumibot alpaca-trade-api pandas torch transformers yfinance
 ```
 
----
-
-## API Credentials
-
-```
-ALPACA_API_KEY=your_key
-ALPACA_SECRET_KEY=your_secret
-ALPACA_BASE_URL=https://paper-api.alpaca.markets/v2
-```
-
 
 ## Running the Bot
 
@@ -160,4 +137,4 @@ The bot logs:
 * Orders placed
 * Errors or unexpected API results
 
-Logs are stored in the `logs/` directory and are useful for debugging.
+Logs are stored in the `logs/` 
